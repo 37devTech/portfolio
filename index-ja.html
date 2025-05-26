@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neil Humphrey ウェブ開発者</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        margin: 0;
+        background-color: #f4f7fa;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      .language-switcher {
+        position: fixed;
+        top: 15px;
+        right: 25px;
+        z-index: 1000;
+      }
+
+      .language-switcher a {
+        color: #005b8f;
+        text-decoration: none;
+        font-weight: bold;
+        background: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .language-switcher a:hover {
+        text-decoration: underline;
+      }
+
+      .bio-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+
+      .profile-pic img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .bio-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #005b8f;
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .project-gallery,
+      .package-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .project-card,
+      .package {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+      }
+
+      .project-card img {
+        max-width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .project-card a,
+      .package a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #005b8f;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-card a:hover,
+      .package a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .add-ons {
+        background: #e8f4fc;
+        border-left: 4px solid #005b8f;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 30px;
+      }
+
+      .contact-info {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 18px;
+      }
+
+      a {
+        color: #005b8f;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .bio-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .project-card,
+        .package {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="language-switcher">
+        <a href="index.html">English Site</a>
+      </div>
+      <div class="bio-container">
+        <div class="profile-pic">
+          <img src="images/neil_profile_pic.jpg" alt="Neil Humphrey" />
+        </div>
+        <div class="bio-text">
+          <h2>こんにちは、ニール・ハンフリーです</h2>
+          <p>
+            私は起業家であり、ウェブ開発者です。小規模ビジネスの立ち上げ、成長、拡大を支援する高品質なウェブ開発とSEOサービスを提供しています。
+          </p>
+          <p>
+            私自身も小規模ビジネスのオーナーとして、実店舗、サービス業、そしてECショップのニーズを深く理解しています。お客様と密に連携しながら、ビジネスに最適なオンラインプレゼンスを構築し、ターゲット顧客を惹きつけるサイト作りをお手伝いします。
+          </p>
+        </div>
+      </div>
+
+      <h2>制作実績</h2>
+      <div class="project-gallery">
+        <div class="project-card">
+          <img
+            src="images/chiko_site_preview.png"
+            alt="ジュエリーショップサイト"
+          />
+          <h3>小規模ビジネス向けサイト</h3>
+          <a href="https://chikojewelry.shop/" target="_blank">サイトを見る</a>
+        </div>
+        <div class="project-card">
+          <img
+            src="images/shinrinyoku_site_preview.png"
+            alt="森林浴ウェルネスサイト"
+          />
+          <h3>ウェルネスビジネス</h3>
+          <a href="https://shonanshinrinyoku.com/index.html" target="_blank"
+            >サイトを見る</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="images/wefind_website_preview.png" alt="ECサイト" />
+          <h3>ECサイト</h3>
+          <a href="https://wefindjapan.com" target="_blank">サイトを見る</a>
+        </div>
+      </div>
+
+      <h2>ウェブ開発サービス</h2>
+      <ul>
+        <li>
+          <strong>パッケージ1:</strong>
+          カスタマイズされた1ページのレスポンシブサイト — <em>25,000円</em>
+        </li>
+        <li>
+          <strong>パッケージ2:</strong> 複数ページののカスタマイズサイト —
+          <em>50,000〜75,000円</em>
+        </li>
+      </ul>
+      <h3>追加サービス:</h3>
+      <ul>
+        <li>ウェブサイト管理（コンテンツの更新） — <em>月額 5,000円</em></li>
+      </ul>
+      <br />
+      <h2>ウェブサイト翻訳サービス</h2>
+      <ul>
+        <li>
+          あなたのウェブサイトを英語に翻訳し、日本国外の観光客や訪問者に向けて、商品やサービスを効果的にアピールします。
+        </li>
+      </ul>
+      <br />
+      <h2>SEOサービス</h2>
+      <div class="package-list">
+        <div class="package">
+          <h3>初期SEOセットアップ</h3>
+          <ul>
+            <li>SEO監査</li>
+            <li>キーワードマッピング</li>
+            <li>オンページ最適化</li>
+            <li>技術的修正</li>
+            <li>Google設定</li>
+            <li>内部リンク最適化</li>
+            <li>Googleビジネスプロフィール最適化</li>
+          </ul>
+          <p><strong>納期:</strong> 1〜2週間</p>
+          <p><strong>価格:</strong> 10,000円 / $75.00</p>
+        </div>
+
+        <div class="package">
+          <h3>月額SEOメンテナンス</h3>
+          <ul>
+            <li>順位トラッキングとレポート</li>
+            <li>アクセス解析モニタリング</li>
+            <li>リンク切れ修正</li>
+            <li>ビジネスプロフィールの更新</li>
+            <li>コンバージョン最適化</li>
+            <li>コンテンツ更新</li>
+            <li>基本的なバックリンク獲得</li>
+          </ul>
+          <p><strong>内容:</strong> 月次レポート + 戦略更新</p>
+          <p><strong>価格:</strong> 7,500〜10,000円 / $50.00 – $70.00</p>
+        </div>
+      </div>
+
+      <div class="add-ons">
+        <h3>オプション:</h3>
+        <ul>
+          <li>Google広告運用</li>
+          <li>ランディングページ制作</li>
+          <li>画像SEO最適化</li>
+          <li>ローカルディレクトリ掲載</li>
+        </ul>
+      </div>
+
+      <div class="contact-info">
+        <p>
+          無料相談をご希望の方はこちら:<br />
+          <a href="mailto:neilhumphreytech@gmail.com"
+            >neilhumphreytech@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

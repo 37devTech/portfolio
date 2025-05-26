@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neil Humphrey Web Developer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        margin: 0;
+        background-color: #f4f7fa;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      .language-switcher {
+        position: fixed;
+        top: 15px;
+        right: 25px;
+        z-index: 1000;
+      }
+
+      .language-switcher a {
+        color: #005b8f;
+        text-decoration: none;
+        font-weight: bold;
+        background: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .language-switcher a:hover {
+        text-decoration: underline;
+      }
+
+      .bio-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+
+      .profile-pic img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .bio-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #005b8f;
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .project-gallery,
+      .package-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .project-card,
+      .package {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+      }
+
+      .project-card img {
+        max-width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .project-card a,
+      .package a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #005b8f;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-card a:hover,
+      .package a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .add-ons {
+        background: #e8f4fc;
+        border-left: 4px solid #005b8f;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 30px;
+      }
+
+      .contact-info {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 18px;
+      }
+
+      a {
+        color: #005b8f;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .bio-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .project-card,
+        .package {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="language-switcher">
+        <a href="index-ja.html">日本語サイト</a>
+      </div>
+      <div class="bio-container">
+        <div class="profile-pic">
+          <img src="images/neil_profile_pic.jpg" alt="Neil Humphrey" />
+        </div>
+        <div class="bio-text">
+          <h2>Hi, I'm Neil Humphrey</h2>
+          <p>
+            I'm an entrepreneur and web developer dedicated to helping small
+            businesses launch, grow, and scale through high-quality web
+            development and SEO services.
+          </p>
+          <p>
+            As a small business owner myself, I understand the unique needs of
+            physical storefronts, service-based businesses, and ecommerce shops.
+            I’ll work with you closely every step of the way to ensure you have
+            a strong, professional online presence that attracts the right
+            customers to your business.
+          </p>
+        </div>
+      </div>
+
+      <h2>Completed Projects</h2>
+      <div class="project-gallery">
+        <div class="project-card">
+          <img src="images/chiko_site_preview.png" alt="Jewelry shop website" />
+          <h3>Small Business Website</h3>
+          <a href="https://chikojewelry.shop/" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img
+            src="images/shinrinyoku_site_preview.png"
+            alt="Shinrinyoku website"
+          />
+          <h3>Wellness Business</h3>
+          <a href="https://shonanshinrinyoku.com/index.html" target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <img
+            src="images/wefind_website_preview.png"
+            alt="ecommerce website"
+          />
+          <h3>E-Commerce Website</h3>
+          <a href="https://wefindjapan.com" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <h2>Web Development Services</h2>
+      <ul>
+        <li>
+          <strong>Package 1:</strong> Fully customized one-page responsive
+          website —
+          <em>￥25,000 ($175)</em>
+        </li>
+        <li>
+          <strong>Package 2:</strong> Multi-page. Fully customized and
+          responsive — <em>￥50,000 - 75,000 ($350 - $500) </em>
+        </li>
+      </ul>
+      <h3>Add-on Services:</h3>
+      <ul>
+        <li>Website management (content updates) — <em>5,000 yen/month</em></li>
+      </ul>
+
+      <h2>SEO Services</h2>
+      <div class="package-list">
+        <div class="package">
+          <h3>One-Time SEO Setup</h3>
+          <ul>
+            <li>Full SEO Audit</li>
+            <li>Keyword Mapping</li>
+            <li>On-Page Optimization</li>
+            <li>Technical Fixes</li>
+            <li>Google Setup</li>
+            <li>Internal Linking</li>
+            <li>Google Business Profile Optimization</li>
+          </ul>
+          <p><strong>Turnaround:</strong> 1–2 weeks</p>
+          <p><strong>Price:</strong> ¥10,000 / $75.00</p>
+        </div>
+
+        <div class="package">
+          <h3>Monthly SEO Maintenance</h3>
+          <ul>
+            <li>Rank Tracking & Reporting</li>
+            <li>Analytics Monitoring</li>
+            <li>Broken Link Fixes</li>
+            <li>Business Profile Updates</li>
+            <li>Conversion Optimization</li>
+            <li>Content Refreshes</li>
+            <li>Basic Backlink Outreach</li>
+          </ul>
+          <p><strong>Includes:</strong> Monthly report + strategy update</p>
+          <p><strong>Price:</strong> ¥7,500 – ¥10,000 / $50.00 – $70.00</p>
+        </div>
+      </div>
+
+      <div class="add-ons">
+        <h3>Optional Add-Ons:</h3>
+        <ul>
+          <li>Google Ads Management</li>
+          <li>Landing Page Creation</li>
+          <li>Image SEO Optimization</li>
+          <li>Local Directory Listings</li>
+        </ul>
+      </div>
+
+      <div class="contact-info">
+        <p>
+          Let's work together, email:<br />
+          <a href="mailto:neilhumphreytech@gmail.com"
+            >neilhumphreytech@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
